@@ -1,0 +1,11 @@
+# 將zip解壓縮後使用cmd cd 指令切換到目錄 並且初始化資料庫至你的local
+initdb -D "C:\DB\pgsqlData"
+
+# 資料庫初始完成後 → 進入單一狀況並且建立使用者
+postgres --single -D "C:\DB\pgsqlData" template1
+
+# 建立使用者 postgres  密碼 1234
+CREATE USER postgres WITH PASSWORD '1234' SUPERUSER;
+
+# 啟動資料庫
+pg_ctl -D "C:\DB\pgsqlData" start
