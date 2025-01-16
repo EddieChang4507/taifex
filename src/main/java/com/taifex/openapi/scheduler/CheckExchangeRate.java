@@ -50,7 +50,7 @@ public class CheckExchangeRate {
 	DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 	// 設定每天 18:00 執行
-	@Scheduled(cron = "0 39 16 * * *")
+	@Scheduled(cron = "0 00 18 * * *")
 	public void checkExchangeRate() {
 		executeExchangeRateCheck();
 	}
