@@ -1,13 +1,11 @@
-package com.taifex.openapi.dto;
+package com.taifex.openapi.api.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-public class RequestDto {
+public class CurrencyRequest {
 	private String startDate;
 	private String endDate;
 	private String currency;
 
-	@JsonProperty("startDate")
+	// Getters and Setters
 	public String getStartDate() {
 		return startDate;
 	}
@@ -16,7 +14,6 @@ public class RequestDto {
 		this.startDate = startDate;
 	}
 
-	@JsonProperty("endDate")
 	public String getEndDate() {
 		return endDate;
 	}
@@ -25,7 +22,6 @@ public class RequestDto {
 		this.endDate = endDate;
 	}
 
-	@JsonProperty(" currency ")
 	public String getCurrency() {
 		return currency;
 	}
