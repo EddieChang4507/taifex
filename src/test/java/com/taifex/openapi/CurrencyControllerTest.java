@@ -25,7 +25,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.taifex.openapi.api.controller.CurrencyController;
 import com.taifex.openapi.api.dto.CurrencyRequest;
 import com.taifex.openapi.api.dto.CurrencyResponse.CurrencyData;
-import com.taifex.openapi.rest.entity.ExchangeRate;
 import com.taifex.openapi.rest.service.ExchangeRateService;
 
 @WebMvcTest(CurrencyController.class)

@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.taifex.openapi.api.dto.CurrencyRequest;
 import com.taifex.openapi.api.dto.CurrencyResponse;
-import com.taifex.openapi.rest.entity.ExchangeRate;
 import com.taifex.openapi.rest.service.ExchangeRateService;
 
 @RestController
